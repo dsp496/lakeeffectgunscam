@@ -1,0 +1,14 @@
+<Table align="center">
+<tr><td align="left"><img width="200" src="logo.png"/></td></tr>
+<tr><td align="Center"><img width="1024" src="http://lakeeffectguns.hopto.org:8080/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=lakeeffect&pwd=@lakeeffect" id="myImage" /></td></tr>
+</Table>
+<script>
+var myImageElement = document.getElementById('myImage');
+myImageElement.src = 'http://lakeeffectguns.hopto.org:8080/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=lakeeffect&pwd=@lakeeffect' + Math.random();
+
+setInterval(function() {
+    var myImageElement = document.getElementById('myImage');
+    myImageElement.src = 'http://lakeeffectguns.hopto.org:8080/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=lakeeffect&pwd=@lakeeffect&rand=' + Math.random();
+    console.log(myImageElement);
+}, 1500);
+</script>
